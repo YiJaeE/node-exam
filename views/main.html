@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main</title>
+</head>
+<body>
+  <h1><%= locals.data.title %></h1>
+  <p><%- locals.data.html %></p>
+  <%for (i = 0; i < 10; i++) {
+    %>
+    <span>이게 뭐람 ㅎ</span>
+    <%
+  } %>
+  <!-- <img src="/public/IMG_9125.JPG" style="width: 500px;"> -->
+  <script>
+    let serverJson = <%- JSON.stringify(locals.data) %>
+    console.log(serverJson);
+  </script>
+</body>
+</html>
