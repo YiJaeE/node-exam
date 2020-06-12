@@ -3,7 +3,7 @@ let Sequelize = require('sequelize');
 // 시퀄라이즈를 직접 사용하게끔 해주는 변수
 let sequelize;
 
-sequelize = new Sequelize('yijaeedb', 'yijaeedb', 'xornjs8818!', {
+sequelize = new Sequelize('yijaeedb', 'yijaeedb', 'nodeexam', {
   host: 'yijaeedb.cgxvowg6jm0h.ap-northeast-2.rds.amazonaws.com',
   dialect: 'mysql',
   port: 3306,
